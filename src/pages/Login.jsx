@@ -5,9 +5,9 @@ import Logo from "../assets/logo.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { registerRoute } from "../utils/APIRoutes";
+import { loginRoute } from "../utils/APIRoutes";
 
-function Register() {
+function Login() {
 
   const navigate = useNavigate();
 
@@ -28,19 +28,17 @@ function Register() {
 
   const [values, setValues] = useState({
     username: "",
-    email: "",
     password: "",
-    confirmPassword: "",
+    
   });
 
 
   const handleSubmit = async (event)=>{
     event.preventDefault();
     if (handleValidation()){
-      const { password, username, email } = values;
-      const { data } = await axios.post(registerRoute, {
+      const { password, username } = values;
+      const { data } = await axios.post(loginRoute, {
         username,
-        email,
         password,
       });
       if (data.status === false) {
@@ -57,34 +55,24 @@ function Register() {
 
 
   const handleValidation = () => {
-    const { password, confirmPassword, username, email } = values;
-    if( password !== confirmPassword)
+    const { password, username} = values;
+    if( password === "")
     {
-      
-      toast.error("password and confirm password should be same.", 
-      toastOptions
+      toast.error(
+        "Email and Password is required.",
+        toastOptions
       );
       return false;
     } 
-    else if (username.length < 3) 
+    else if (username.length === "") 
     {
       toast.error(
-        "Username should be greater than 3 characters.",
+        "Email and Password is required.",
         toastOptions
       );
       return false;
     }
-    else if (password.length < 8) {
-      toast.error(
-        "Password should be equal or greater than 8 characters.",
-        toastOptions
-      );
-      return false;
-    }
-    else if (email === "") {
-      toast.error("Email is required.", toastOptions);
-      return false;
-    }
+    
 
     return true;
 
@@ -107,30 +95,21 @@ function Register() {
             placeholder='Username' 
             name='username' 
             onChange={e=>handleChange(e)} 
+            min = "3"
           />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            onChange={(e) => handleChange(e)}
-          />
+          
           <input
             type="password"
             placeholder="Password"
             name="password"
             onChange={(e) => handleChange(e)}
           />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            name="confirmPassword"
-            onChange={(e) => handleChange(e)} 
-          />
-          <button type="submit">Create User</button>
+          
+          <button type="submit">Login </button>
           <span>
-            Already have an account ? 
-            <Link to="/login">
-              Login
+            Don't have an account ? 
+            <Link to="/register">
+              Register
             </Link>
           </span>
         </form>
@@ -207,6 +186,7 @@ const FormContainer = styled.div`
       font-weight: bold;
     }
   }
+  
 `;
 
-export default Register
+export default Login
