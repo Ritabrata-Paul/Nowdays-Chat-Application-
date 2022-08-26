@@ -21,7 +21,7 @@
 
 ## About
 
-🛒 Amazon Clone - This is a realtime-chat-application. This application covered by web-socket for Realtime messaging. Whole system developed by ExpressJS, ReacJS, Socket, Mongodb & NodeJs. 
+🛒 Nowdays - This is a realtime-chat-application. This application covered by web-socket for Realtime messaging. Whole system developed by ExpressJS, ReacJS, Socket, Mongodb & NodeJs. 
 ---
 
 ## Features
