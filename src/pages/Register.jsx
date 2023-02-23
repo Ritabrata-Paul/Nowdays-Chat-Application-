@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { registerRoute } from "../utils/APIRoutes";
 
-function Register() {
+export default function Register() {
 
   const navigate = useNavigate();
 
@@ -209,4 +209,4 @@ const FormContainer = styled.div`
   }
 `;
 
-export default Register
+

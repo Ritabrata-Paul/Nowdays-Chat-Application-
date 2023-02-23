@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { loginRoute } from "../utils/APIRoutes";
 
-function Login() {
+export default function Login() {
 
   const navigate = useNavigate();
 
@@ -189,4 +189,4 @@ const FormContainer = styled.div`
   
 `;
 
-export default Login
+

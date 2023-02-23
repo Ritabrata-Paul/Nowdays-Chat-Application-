@@ -8,7 +8,8 @@ import Welcome from "../components/Welcome";
 import ChatContainer from "../components/ChatContainer";
 import { io } from "socket.io-client";
 
-function Chat() {
+
+export default function Chat() {
   const socket = useRef(); 
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
@@ -107,4 +108,3 @@ const Container = styled.div`
   }
 `;
 
-export default Chat;
