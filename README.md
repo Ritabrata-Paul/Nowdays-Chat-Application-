@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+<h1 align="center">
+   🛒 <a href=""> Nowdays </a>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+    Nowdays  a simple chat application that I've made using React js and socket-io, Expressjs and many more .
+</h3>
 
-## Available Scripts
+<h4 align="center"> 
+	 Status: Finished
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+ <a href="#about">About</a> •
+ <a href="#features">Features</a> •
+ <a href="#screenshots">Screenshots</a> • 
+ <a href="#how-it-works">How it works</a> • 
+ <a href="#tech-stack">Tech Stack</a> 
+</p>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛒 Nowdays - This is a realtime-chat-application. This application covered by web-socket for Realtime messaging. Whole system developed by ExpressJS, ReacJS, Socket, Mongodb & NodeJs. 
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - [x] Nowdays
+   - [x] User Authentication with Mongodb 
+   - [x] User can Chat Eachother
+   - [x] Nice and smooth UI & Avatar
+  
+---
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img alt="cases" src="https://github.com/Ritabrata-Paul/Nowdays-Chat-Application-/blob/master/Screenshot/%3D2.PNG">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img alt="cases" src="https://github.com/Ritabrata-Paul/Nowdays-Chat-Application-/blob/master/Screenshot/%3D2.PNG">
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <img alt="cases" src="https://github.com/Ritabrata-Paul/Nowdays-Chat-Application-/blob/master/Screenshot/ss3.PNG">
+</p>
 
-### `npm run eject`
+<p align="center">
+  <img alt="cases" src="https://github.com/Ritabrata-Paul/Nowdays-Chat-Application-/blob/master/Screenshot/ss4.PNG">
+</p>
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How it works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project have two parts:
+1. Frontend
+2. Hosting
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+It will need an account in Google to connect it to the Firebase for hosting and User Authentication.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pre-requisites
 
-## Learn More
+Before you begin, you will need to have the following tools installed on your machine:
+[Git] (https://git-scm.com).
+In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Running the web application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
 
-### Code Splitting
+# Clone this repository
+$ git clone https://github.com/Yola21/Amazon-Clone-App.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Go to your local repository:
+$ cd [local repository]
 
-### Analyzing the Bundle Size
+# Check package.json file and ensure scripts are notated as below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+$ "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  
+# Delete the node_modules folder and any 'lock' files such as 
+yarn.lock or package-lock.json (if present).
 
-### Making a Progressive Web App
+# Install dependencies
+$ npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Run the application
+$ npm start
 
-### Advanced Configuration
+# Build the application
+$ npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Tech Stack
 
-### `npm run build` fails to minify
+The following tools were used in the construction of the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### **Website**  ([React](https://reactjs.org/))
+
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[React-Context-API](https://reactjs.org/docs/context.html)**
+-   **[React-Router](https://www.npmjs.com/package/react-router)**
+-   **[Material UI](https://material-ui.com/)**
+-   **[Firebase](https://firebase.google.com/)**
+
+> See the file  [package.json](https://github.com/Yola21/Amazon-Clone-App/blob/main/package.json)
+
+#### **Utilities**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+
+---
+
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/Ritabrata1169">Ritabrata</a></b></h1>
